@@ -4,7 +4,7 @@ import joblib
 import numpy as np
 
 # Load the trained model
-model = joblib.load('linear_regression_model.sav')
+model = joblib.load(open('linear_regression_model.sav','rb'))
 
 st.title('Insurance Charges Prediction App')
 st.write('Enter the details below to predict the insurance charges.')
