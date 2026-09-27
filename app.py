@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
-
+import joblib
 import numpy as np
 
-# Load the trained model
-model = jb.load('linear_regression_model.sav')
+# Load the trained model from medical.pkl
+model = joblib.load('medical.pkl')
 
 st.title('Insurance Charges Prediction App')
 st.write('Enter the details below to predict the insurance charges.')
